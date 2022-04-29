@@ -23,7 +23,7 @@ import br.com.nava.services.ProfessorService;
 
 @RestController
 @RequestMapping("professores")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProfessorController {
 
 																					//	conhecido como injecao de dependencia

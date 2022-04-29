@@ -29,7 +29,7 @@ public class UsuarioController {
 	//____________________________________________ Retorna apenas 01, buscando pelo ID______________________________
 	@GetMapping("{id}")
 	
-	public UsuarioEntity getOne(@PathVariable Integer id) {							// o ID entre {} e o comentário @PathVariable, indica que o Id é variavel 
+	public UsuarioEntity getOne(@PathVariable Integer id) {							
 		return usuarioService.getOne(id);
 	}
 	
@@ -37,7 +37,7 @@ public class UsuarioController {
 	//____________________________________________ Insere um novo item _____________________________________________
 	@PostMapping ("")
 	
-	public UsuarioEntity save(@RequestBody UsuarioEntity usuario) {					//fazendo mapeamento do que está vindo pelo corpo Body @RequestBody
+	public UsuarioEntity save(@RequestBody UsuarioEntity usuario) {				
 		return usuarioService.save(usuario);
 	}
 	
